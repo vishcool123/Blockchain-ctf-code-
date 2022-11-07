@@ -1,0 +1,92 @@
+#playarrow {
+    transition: all 0.2s ease;
+    left: 0;
+}
+
+a:hover #playarrow {
+    left: 10px;
+}
+
+pre,
+.pre {
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+code {
+    font-family: inconsolata, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+code {
+    padding: 0.2em;
+    font-size: 85%;
+    background-color: rgba(27, 31, 35, .05);
+    border-radius: 3px;
+}
+
+pre code {
+    background-color: transparent;
+    display: block;
+    padding: 1.5em;
+    white-space: pre;
+    font-size: .875rem;
+    line-height: 1.25;
+}
+
+pre {
+    white-space: pre;
+
+    hyphens: none;
+    position: relative;
+}
+
+article p {
+    margin-top: 0;
+}
+
+nav {
+    background-color: #212529;
+}
+
+.molengo {
+    font-family: molengo;
+}
+
+.lekton {
+    font-family: lekton;
+}
+
+.vt323 {
+    font-family: VT323;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.in-progress {
+    background-color: #e7040f;
+    color: white;
+    cursor: default;
+}
+
+.pressstart2p {
+    font-family: press_start_2pregular;
+}
+
+sidebar#left {
+    max-width: 30em;
+}
+
+li {
+    /* list-style-type: none; */
+}
+
+.mt5 {
+    margin-top: 22rem;
+}
+
+.ph3 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}

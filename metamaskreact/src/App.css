@@ -1,0 +1,233 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.banner {
+  height: fit-content;
+}
+
+.eventmaintitle {
+  font-size: 24px;
+  font-weight: 600;
+  color: #626262;
+  text-transform: capitalize;
+  line-height: 1.3;
+  margin: 20px 50px;
+}
+
+.overview {
+  /* font-size: 24px; */
+  font-weight: 300;
+  color: #626262;
+  text-transform: capitalize;
+  line-height: 1.3;
+  margin: 10px 50px;
+}
+
+.fontSize {
+  margin: 10px 50px;
+  font-size: 18px;
+}
+
+.applicationHeader {
+  margin: 20px 3px;
+  padding-bottom: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+}
+
+.applicationHeader:after {
+  top: 31px;
+  left: 1px;
+  width: 24px;
+  border-bottom: 3px solid #fb0;
+  position: absolute;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  background: #fafafa;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /* height: 100vh; */
+
+}
+
+.button {
+  top: 20px;
+  left: 40%;
+  /* bottom: 50%; */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  box-shadow: 0 1px 5px 0 #e6e9ef;
+  background: #ffffff;
+  color: #000;
+  border-radius: 99px;
+  padding: 16px 32px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#walletID {
+  position: relative;
+  align-self: center;
+  top: -40px;
+  left: 40%;
+  bottom: 10%;
+  color: red;
+
+}
+
+
+#walletID span {
+  max-width: 90%;
+  margin: 0 auto;
+  font-size: 12px;
+  font-weight: 600;
+
+
+
+}
+
+#mobileDeviceWarning {
+  display: none;
+  margin-top: 24px;
+  color: rgb(247, 47, 47);
+}
+
+#mobileDeviceWarning.show {
+  display: block;
+}
+
+.alert {
+  z-index: 10;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: #ffffff;
+}
+
+.alert.show {
+  display: flex;
+}
+
+.alert .button {
+  margin-top: 24px;
+}
+
+/* Loading dots styles */
+@keyframes opacity {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.loadingButton {
+  pointer-events: none;
+}
+
+.loadingButton #loading {
+  display: flex;
+}
+
+#loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 99px;
+}
+
+#loading span:not(:last-child) {
+  margin-right: 5px;
+}
+
+#loading span {
+  animation-name: opacity;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+#loading span:nth-child(2) {
+  animation-delay: 100ms;
+  animation-delay: 100ms;
+}
+
+#loading span:nth-child(3) {
+  animation-delay: 300ms;
+  animation-delay: 300ms;
+}
+
+.mt4 {
+  margin-top: -11rem;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
